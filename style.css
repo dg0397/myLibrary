@@ -82,10 +82,13 @@ nav ul li:last-child{
     left: 0;
 }
 /*Books Section*/
+.container-book{
+    margin: 1em auto
+}
 .books{
     display: grid;
     width: 80%;
-    margin: 1em auto;
+    margin: 0em auto;
     margin-bottom: 2.5em;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 30px;
@@ -192,16 +195,16 @@ footer{
 }
 .addBook form{
     width: 80%;
-    margin: 1em auto;
+    margin: .5em auto;
 }
 fieldset{
     width: 100%;
-    padding: 1em 0;
+    padding: .5em 0;
     border: none;
 }
 
 .container-info{
-    margin-bottom: 1.2em;
+    margin-bottom: .3em;
     text-align: left;
 }
 .container-info label{
