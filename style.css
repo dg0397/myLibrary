@@ -88,7 +88,7 @@ nav ul li:last-child{
 .books{
     display: grid;
     width: 80%;
-    margin: 1em auto;
+    margin: 0em auto;
     margin-bottom: 2.5em;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 30px;
