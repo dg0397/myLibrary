@@ -195,16 +195,16 @@ footer{
 }
 .addBook form{
     width: 80%;
-    margin: 1em auto;
+    margin: .5em auto;
 }
 fieldset{
     width: 100%;
-    padding: 1em 0;
+    padding: .5em 0;
     border: none;
 }
 
 .container-info{
-    margin-bottom: 1.2em;
+    margin-bottom: .3em;
     text-align: left;
 }
 .container-info label{
