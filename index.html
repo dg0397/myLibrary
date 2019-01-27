@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/FirstCanvas.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700,700i" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>My Library</h1>
+        </header>
+        <nav>
+            <label for="btnMenu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="btnMenu">
+            <div class="menu">
+                <ul>
+                    <li id="addNew">Add New Book</li>
+                    <li id="deleteOne">Delete a Book</li>
+                    <li id="deleteAll">Delete All</li>
+                </ul>
+            </div>
+        </nav>
+        <section class="books"></section>
+        <section class="addBook active">
+            <div class="container-header">
+                <div class="btn-close"><i class="far fa-window-close"></i></div>
+                <div class="title-form">
+                    <h1>Form to add a book</h1>
+                </div>
+            </div>
+            <form action="#">
+                <fieldset>
+                    <div class="container-info">
+                        <div class="container-label">
+                            <label for="title">Title of the book</label>
+                        </div>
+                        <div class="container-input">
+                            <input type="text" name='title' id="title" placeholder="Enter the title of the book" required>
+                        </div>
+                    </div>
+                    <div class="container-info">
+                        <div class="container-label">
+                            <label for="author">Author of the book</label>
+                        </div>
+                        <div class="container-input">
+                            <input type="text" name='author' id="author" placeholder="Enter the author of the book" required>
+                        </div>
+                    </div>
+                    <div class="container-info">
+                        <div class="container-label">
+                            <label for="pages">Number of pages of the book.</label>
+                        </div>
+                        <div class="container-input">
+                            <input type="number" name='pages' id="pages" required>
+                        </div>
+                    </div>
+                    <div class="container-info">
+                        <div class="container-label">
+                            <label for="imgOfBook">Book cover(Url of the picture)</label>
+                        </div>
+                        <div class="container-input">
+                            <input type="url" name='imgOfBook' id="imgOfBook" placeholder="If you don't have, don't worry." required>
+                        </div>
+                    </div>
+                    <div class="container-info">
+                        <div class="container-label">
+                            <label for="btnRead">Have you read the book?</label>
+                        </div>
+                        <div class="container-input">
+                            <input type="radio" name='btnRead' id="btnRead" value="Yes">Yes
+                            <input type="radio" name='btnRead' id="btnRead" value="No">No
+                        </div>
+                    </div>
+                    <div class="container-btn">
+                        <button id='addBook' class="readBtn">Add Book</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            2019
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
